@@ -90,9 +90,9 @@ h6,
   background-color: #f28281 !important;
 }
 .btn-primary {
-  background-color: #c0a375;
-  border-color: #c0a375;
-  color: #ffffff;
+  background-color: white;
+  border-color: #E24301;
+  color: #E24301;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -100,8 +100,8 @@ h6,
 .btn-primary:active,
 .btn-primary.active {
   color: #ffffff;
-  background-color: #a07e49;
-  border-color: #a07e49;
+  background-color: #E24301;
+  border-color: #E24301;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
