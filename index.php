@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php $form_path='assets/formoid/form.php'; require_once $form_path; ?><!DOCTYPE html>
 <!--**********************************************************************
 * FILENAME :        Consultoría y Enlace Empresarial | Index
 *
@@ -496,7 +496,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e24301', end
               </div>
 
             </div>
-
+            
             <div class="col-xs-12 text-xs-center">
                 <a href="#header3-3">
                     <button type="button" class="btn btn-primary btn-lg"><span class="fa fa-arrow-down"></span></button>
@@ -580,7 +580,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e24301', end
             </div>
         </div>
     </div>
-
+    
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-xs-center">
@@ -786,9 +786,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e24301', end
 
           <div class="col-md-4 text-xs-center">
               <span class="hvr-grow hvr-shadow">
-                  <img src="images/cee-internacional.png" alt="comercio-exterior">
+                  <img src="images/cee-internacional.png" alt="impuestos-internacionales">
               </span>
-              <h5>Comercio Exterior</h5>
+              <h5>Impuestos Internacionales</h5>
           </div>
 
             <div class="col-md-4 text-xs-center">
@@ -868,46 +868,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e24301', end
             <div class="row">
                 <div class="col-xs-12 col-lg-6" data-form-type="formoid">
 
+<!--                    <div data-form-alert="true">
+                        <div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">¡Gracias por comunicarte con nosotros! En unos momentos nos pondremos en contacto contigo.</div>
+                    </div>-->
 
-                    <div data-form-alert="true">
-                        <div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">¡Gracias por comunicarte con nosotros!</div>
-                    </div>
-
-
-                    <form action="mailto:contacto@cee.mx?subject=Contact_Form" method="post" enctype="text/plain">
+                    <form method="post" class="formoid-solid-blue">
 
                         <input type="hidden" value="GfrOj0CicZVu3WUxODb5cBhOrdR8Ejw0boN3tzRwemsBt3IlmzjeV/V2FcjCw7dsAD3d4cRn54JlWpFN5YARr3gJebD33rbtN4XGh0SCKkIzxn8U1Gjq8PnJemMSeW9w" data-form-email="true">
 
                         <div class="form-group">
-                            <label class="form-control-label" for="form1-9-name">Nombre *</label>
-                            <input type="text" class="form-control" name="nombre" required="" data-form-field="nombre" id="form1-9-nombre">
+                            <label class="form-control-label" for="nombre">Nombre *</label>
+                            <input type="text" class="form-control" name="input" required="required" id="nombre">
                         </div>
 
                         <div class="form-group">
-                            <label class="form-control-label" for="form1-9-email">Correo *</label>
-                            <input type="email" class="form-control" name="correo" required="" data-form-field="correo" id="form1-9-correo">
+                            <label class="form-control-label" for="email">Correo *</label>
+                            <input type="email" class="form-control" name="email" required="required" id="correo">
                         </div>
 
                         <div class="form-group">
-                            <label class="form-control-label" for="form1-9-email">Teléfono</label>
-                            <input type="tel" class="form-control" name="telefono" data-form-field="telefono" id="form1-9-telefono">
+                            <label class="form-control-label" for="telefono">Teléfono</label>
+                            <input type="tel" class="form-control" name="phone" maxlength="24" id="telefono" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}">
                         </div>
 
                         <div class="form-group">
-                            <label class="form-control-label" for="form1-9-phone">Empresa</label>
-                            <input type="text" class="form-control" name="empresa" data-form-field="empresa" id="form1-9-empresa">
+                            <label class="form-control-label" for="empresa">Empresa</label>
+                            <input type="text" class="form-control" name="input1" id="empresa">
                         </div>
 
                         <div class="form-group">
-                            <label class="form-control-label" for="form1-9-message">Mensaje *</label>
-                            <textarea class="form-control" name="mensaje" required=""  rows="7" data-form-field="mensaje" id="form1-9-mensaje"></textarea>
+                            <label class="form-control-label" for="mensaje">Mensaje *</label>
+                            <textarea class="form-control" name="textarea" required="required"  rows="7" id="mensaje"></textarea>
                         </div>
 
                         <div class="text-xs-center" style="margin-bottom:20px;"><button type="submit" class="btn btn-primary">Contáctanos</button></div>
 
                     </form>
                 </div>
-
 
                 <div class="col-xs-12 col-lg-offset-1 col-lg-5">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3764.1928188596307!2d-99.28099805557255!3d19.36080194035485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d200ceb26b736d%3A0xe3c1811b543c8a36!2sAv.+Vasco+de+Quiroga+3900%2C+Santa+Fe%2C+Contadero%2C+01219+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1sen!2smx!4v1499272619965" width="100%" height="330" frameborder="0" style="border:0" allowfullscreen></iframe><br><br>
@@ -960,7 +957,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e24301', end
   <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/jarallax/jarallax.min.js"></script>
   <script src="assets/theme/js/script.min.js"></script>
-<!--  <script src="assets/formoid/formoid.min.js"></script>-->
   <script src="assets/tabs/tabs.min.js"></script>
   <script src="https://use.fontawesome.com/d5699e24d6.js"></script>
 
